@@ -1,0 +1,10 @@
+$dokka.format:html
+$dokka.linkExtension:html
+
+me.schlaubi.discordstats
+me.schlaubi.discordstats.builder
+me.schlaubi.discordstats.entities
+me.schlaubi.discordstats.entities.defaults
+me.schlaubi.discordstats.entities.defaults.lists
+me.schlaubi.discordstats.entities.defaults.providers
+me.schlaubi.discordstats.util

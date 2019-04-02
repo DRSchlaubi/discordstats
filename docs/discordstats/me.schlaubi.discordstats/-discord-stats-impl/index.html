@@ -1,0 +1,106 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>DiscordStatsImpl - discordstats</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">discordstats</a>&nbsp;/&nbsp;<a href="../index.html">me.schlaubi.discordstats</a>&nbsp;/&nbsp;<a href="./index.html">DiscordStatsImpl</a><br/>
+<br/>
+<h1>DiscordStatsImpl</h1>
+<code><span class="keyword">class </span><span class="identifier">DiscordStatsImpl</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-discord-stats/index.html"><span class="identifier">DiscordStats</span></a></code> <a href="https://github.com/DRSchlaubi/discordstats/tree/master/src/main/kotlin/me/schlaubi/discordstats/DiscordStatsImpl.kt#L19">(source)</a>
+<p>Implementation of <a href="../-discord-stats/index.html">DiscordStats</a>.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../../me.schlaubi.discordstats.builder/-discord-stats-builder/index.html">me.schlaubi.discordstats.builder.DiscordStatsBuilder</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">DiscordStatsImpl</span><span class="symbol">(</span><span class="identifier" id="me.schlaubi.discordstats.DiscordStatsImpl$<init>(java.util.concurrent.ScheduledExecutorService, kotlin.Long, kotlin.Long, kotlin.collections.List((me.schlaubi.discordstats.entities.BotList)), kotlin.Boolean, me.schlaubi.discordstats.entities.StatsProvider, java.util.function.Consumer((java.io.IOException)), java.util.function.Consumer((okhttp3.Response)), okhttp3.OkHttpClient)/scheduler">scheduler</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ScheduledExecutorService.html"><span class="identifier">ScheduledExecutorService</span></a><span class="symbol">, </span><span class="identifier" id="me.schlaubi.discordstats.DiscordStatsImpl$<init>(java.util.concurrent.ScheduledExecutorService, kotlin.Long, kotlin.Long, kotlin.collections.List((me.schlaubi.discordstats.entities.BotList)), kotlin.Boolean, me.schlaubi.discordstats.entities.StatsProvider, java.util.function.Consumer((java.io.IOException)), java.util.function.Consumer((okhttp3.Response)), okhttp3.OkHttpClient)/interval">interval</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">, </span><span class="identifier" id="me.schlaubi.discordstats.DiscordStatsImpl$<init>(java.util.concurrent.ScheduledExecutorService, kotlin.Long, kotlin.Long, kotlin.collections.List((me.schlaubi.discordstats.entities.BotList)), kotlin.Boolean, me.schlaubi.discordstats.entities.StatsProvider, java.util.function.Consumer((java.io.IOException)), java.util.function.Consumer((okhttp3.Response)), okhttp3.OkHttpClient)/initialDelay">initialDelay</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">, </span><span class="identifier" id="me.schlaubi.discordstats.DiscordStatsImpl$<init>(java.util.concurrent.ScheduledExecutorService, kotlin.Long, kotlin.Long, kotlin.collections.List((me.schlaubi.discordstats.entities.BotList)), kotlin.Boolean, me.schlaubi.discordstats.entities.StatsProvider, java.util.function.Consumer((java.io.IOException)), java.util.function.Consumer((okhttp3.Response)), okhttp3.OkHttpClient)/lists">lists</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../me.schlaubi.discordstats.entities/-bot-list/index.html"><span class="identifier">BotList</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="me.schlaubi.discordstats.DiscordStatsImpl$<init>(java.util.concurrent.ScheduledExecutorService, kotlin.Long, kotlin.Long, kotlin.collections.List((me.schlaubi.discordstats.entities.BotList)), kotlin.Boolean, me.schlaubi.discordstats.entities.StatsProvider, java.util.function.Consumer((java.io.IOException)), java.util.function.Consumer((okhttp3.Response)), okhttp3.OkHttpClient)/shardMode">shardMode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">, </span><span class="identifier" id="me.schlaubi.discordstats.DiscordStatsImpl$<init>(java.util.concurrent.ScheduledExecutorService, kotlin.Long, kotlin.Long, kotlin.collections.List((me.schlaubi.discordstats.entities.BotList)), kotlin.Boolean, me.schlaubi.discordstats.entities.StatsProvider, java.util.function.Consumer((java.io.IOException)), java.util.function.Consumer((okhttp3.Response)), okhttp3.OkHttpClient)/provider">provider</span><span class="symbol">:</span>&nbsp;<a href="../../me.schlaubi.discordstats.entities/-stats-provider/index.html"><span class="identifier">StatsProvider</span></a><span class="symbol">, </span><span class="identifier" id="me.schlaubi.discordstats.DiscordStatsImpl$<init>(java.util.concurrent.ScheduledExecutorService, kotlin.Long, kotlin.Long, kotlin.collections.List((me.schlaubi.discordstats.entities.BotList)), kotlin.Boolean, me.schlaubi.discordstats.entities.StatsProvider, java.util.function.Consumer((java.io.IOException)), java.util.function.Consumer((okhttp3.Response)), okhttp3.OkHttpClient)/errorHandler">errorHandler</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html"><span class="identifier">Consumer</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html"><span class="identifier">IOException</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="me.schlaubi.discordstats.DiscordStatsImpl$<init>(java.util.concurrent.ScheduledExecutorService, kotlin.Long, kotlin.Long, kotlin.collections.List((me.schlaubi.discordstats.entities.BotList)), kotlin.Boolean, me.schlaubi.discordstats.entities.StatsProvider, java.util.function.Consumer((java.io.IOException)), java.util.function.Consumer((okhttp3.Response)), okhttp3.OkHttpClient)/successHandler">successHandler</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html"><span class="identifier">Consumer</span></a><span class="symbol">&lt;</span><a href="https://square.github.io/okhttp/3.x/okhttp/okhttp3/Response.html"><span class="identifier">Response</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="me.schlaubi.discordstats.DiscordStatsImpl$<init>(java.util.concurrent.ScheduledExecutorService, kotlin.Long, kotlin.Long, kotlin.collections.List((me.schlaubi.discordstats.entities.BotList)), kotlin.Boolean, me.schlaubi.discordstats.entities.StatsProvider, java.util.function.Consumer((java.io.IOException)), java.util.function.Consumer((okhttp3.Response)), okhttp3.OkHttpClient)/client">client</span><span class="symbol">:</span>&nbsp;<a href="https://square.github.io/okhttp/3.x/okhttp/okhttp3/OkHttpClient.html"><span class="identifier">OkHttpClient</span></a><span class="symbol">)</span></code>
+<p>Implementation of <a href="../-discord-stats/index.html">DiscordStats</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="get-bot-lists.html">getBotLists</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getBotLists</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../me.schlaubi.discordstats.entities/-bot-list/index.html"><span class="identifier">BotList</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-interval.html">getInterval</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getInterval</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-last-post.html">getLastPost</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getLastPost</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/time/OffsetDateTime.html"><span class="identifier">OffsetDateTime</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-last-sent-statistics.html">getLastSentStatistics</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getLastSentStatistics</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../me.schlaubi.discordstats.entities/-statistics/index.html"><span class="identifier">Statistics</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-scheduler.html">getScheduler</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getScheduler</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ScheduledExecutorService.html"><span class="identifier">ScheduledExecutorService</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-stats-provider.html">getStatsProvider</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getStatsProvider</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../me.schlaubi.discordstats.entities/-stats-provider/index.html"><span class="identifier">StatsProvider</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="post.html">post</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">post</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletionStage.html"><span class="identifier">CompletionStage</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="shard-mode.html">shardMode</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">shardMode</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="start-loop.html">startLoop</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">startLoop</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="stop-loop.html">stopLoop</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">stopLoop</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

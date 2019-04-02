@@ -1,0 +1,95 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>TokenBasedBotlist - discordstats</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">discordstats</a>&nbsp;/&nbsp;<a href="../index.html">me.schlaubi.discordstats.entities.defaults.lists</a>&nbsp;/&nbsp;<a href="./index.html">TokenBasedBotlist</a><br/>
+<br/>
+<h1>TokenBasedBotlist</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">TokenBasedBotlist</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../me.schlaubi.discordstats.entities/-bot-list/index.html"><span class="identifier">BotList</span></a></code> <a href="https://github.com/DRSchlaubi/discordstats/tree/master/src/main/kotlin/me/schlaubi/discordstats/entities/defaults/lists/TokenBasedBotlist.kt#L10">(source)</a>
+<p>Internally used helper class.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">TokenBasedBotlist</span><span class="symbol">(</span><span class="identifier" id="me.schlaubi.discordstats.entities.defaults.lists.TokenBasedBotlist$<init>(kotlin.String)/token">token</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span></code>
+<p>Internally used helper class.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="build-request.html">buildRequest</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">buildRequest</span><span class="symbol">(</span><span class="identifier" id="me.schlaubi.discordstats.entities.defaults.lists.TokenBasedBotlist$buildRequest(kotlin.String, kotlin.String, kotlin.Long, okhttp3.RequestBody, kotlin.String)/base">base</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="me.schlaubi.discordstats.entities.defaults.lists.TokenBasedBotlist$buildRequest(kotlin.String, kotlin.String, kotlin.Long, okhttp3.RequestBody, kotlin.String)/endpoint">endpoint</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="me.schlaubi.discordstats.entities.defaults.lists.TokenBasedBotlist$buildRequest(kotlin.String, kotlin.String, kotlin.Long, okhttp3.RequestBody, kotlin.String)/botId">botId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">, </span><span class="identifier" id="me.schlaubi.discordstats.entities.defaults.lists.TokenBasedBotlist$buildRequest(kotlin.String, kotlin.String, kotlin.Long, okhttp3.RequestBody, kotlin.String)/body">body</span><span class="symbol">:</span>&nbsp;<a href="https://square.github.io/okhttp/3.x/okhttp/okhttp3/RequestBody.html"><span class="identifier">RequestBody</span></a><span class="symbol">, </span><span class="identifier" id="me.schlaubi.discordstats.entities.defaults.lists.TokenBasedBotlist$buildRequest(kotlin.String, kotlin.String, kotlin.Long, okhttp3.RequestBody, kotlin.String)/authHeader">authHeader</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;AUTHORIZATION_HEADER<span class="symbol">)</span><span class="symbol">: </span><a href="https://square.github.io/okhttp/3.x/okhttp/okhttp3/Request.html"><span class="identifier">Request</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../../me.schlaubi.discordstats.entities/-bot-list/build-request.html">buildRequest</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">buildRequest</span><span class="symbol">(</span><span class="identifier" id="me.schlaubi.discordstats.entities.BotList$buildRequest(me.schlaubi.discordstats.entities.Statistics, me.schlaubi.discordstats.DiscordStats)/stats">stats</span><span class="symbol">:</span>&nbsp;<a href="../../me.schlaubi.discordstats.entities/-statistics/index.html"><span class="identifier">Statistics</span></a><span class="symbol">, </span><span class="identifier" id="me.schlaubi.discordstats.entities.BotList$buildRequest(me.schlaubi.discordstats.entities.Statistics, me.schlaubi.discordstats.DiscordStats)/wrapper">wrapper</span><span class="symbol">:</span>&nbsp;<a href="../../me.schlaubi.discordstats/-discord-stats/index.html"><span class="identifier">DiscordStats</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://square.github.io/okhttp/3.x/okhttp/okhttp3/Request.html"><span class="identifier">Request</span></a><span class="symbol">!</span></code>
+<p>Method that should build a new request</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../me.schlaubi.discordstats.entities/-bot-list/format-url.html">formatUrl</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">formatUrl</span><span class="symbol">(</span><span class="identifier" id="me.schlaubi.discordstats.entities.BotList$formatUrl(kotlin.String, kotlin.String, kotlin.Long)/base">base</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="me.schlaubi.discordstats.entities.BotList$formatUrl(kotlin.String, kotlin.String, kotlin.Long)/endpoint">endpoint</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="me.schlaubi.discordstats.entities.BotList$formatUrl(kotlin.String, kotlin.String, kotlin.Long)/botId">botId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code>
+<p>Formats a new url.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../-botlist-space/index.html">BotlistSpace</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">BotlistSpace</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">TokenBasedBotlist</span></a></code>
+<p>Wrapper for <a href="https://docs.botlist.space/bl-docs/bots#server-count">botlist.space</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-bots-for-discord/index.html">BotsForDiscord</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">BotsForDiscord</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">TokenBasedBotlist</span></a></code>
+<p>Wrapper for <a href="https://docs.botsfordiscord.com/methods/bots#bot-stats">botsfordiscord.com</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-discord-bots-org/index.html">DiscordBotsOrg</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">DiscordBotsOrg</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">TokenBasedBotlist</span></a></code>
+<p>Wrapper for <a href="https://discordbots.org/api/docs#bots">discordbots.org</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

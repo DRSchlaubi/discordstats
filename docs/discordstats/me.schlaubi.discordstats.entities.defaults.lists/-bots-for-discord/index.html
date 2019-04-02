@@ -1,0 +1,74 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>BotsForDiscord - discordstats</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">discordstats</a>&nbsp;/&nbsp;<a href="../index.html">me.schlaubi.discordstats.entities.defaults.lists</a>&nbsp;/&nbsp;<a href="./index.html">BotsForDiscord</a><br/>
+<br/>
+<h1>BotsForDiscord</h1>
+<code><span class="keyword">class </span><span class="identifier">BotsForDiscord</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-token-based-botlist/index.html"><span class="identifier">TokenBasedBotlist</span></a></code> <a href="https://github.com/DRSchlaubi/discordstats/tree/master/src/main/kotlin/me/schlaubi/discordstats/entities/defaults/lists/BotsForDiscord.kt#L16">(source)</a>
+<p>Wrapper for <a href="https://docs.botsfordiscord.com/methods/bots#bot-stats">botsfordiscord.com</a>.</p>
+<h3>Parameters</h3>
+<p><a name="token"></a>
+<code>token</code> - the API token for botsfordiscord.com</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">BotsForDiscord</span><span class="symbol">(</span><span class="identifier" id="me.schlaubi.discordstats.entities.defaults.lists.BotsForDiscord$<init>(kotlin.String)/token">token</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span></code>
+<p>Wrapper for <a href="https://docs.botsfordiscord.com/methods/bots#bot-stats">botsfordiscord.com</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="build-request.html">buildRequest</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">buildRequest</span><span class="symbol">(</span><span class="identifier" id="me.schlaubi.discordstats.entities.defaults.lists.BotsForDiscord$buildRequest(me.schlaubi.discordstats.entities.Statistics, me.schlaubi.discordstats.DiscordStats)/stats">stats</span><span class="symbol">:</span>&nbsp;<a href="../../me.schlaubi.discordstats.entities/-statistics/index.html"><span class="identifier">Statistics</span></a><span class="symbol">, </span><span class="identifier" id="me.schlaubi.discordstats.entities.defaults.lists.BotsForDiscord$buildRequest(me.schlaubi.discordstats.entities.Statistics, me.schlaubi.discordstats.DiscordStats)/wrapper">wrapper</span><span class="symbol">:</span>&nbsp;<a href="../../me.schlaubi.discordstats/-discord-stats/index.html"><span class="identifier">DiscordStats</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://square.github.io/okhttp/3.x/okhttp/okhttp3/Request.html"><span class="identifier">Request</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../-token-based-botlist/build-request.html">buildRequest</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">buildRequest</span><span class="symbol">(</span><span class="identifier" id="me.schlaubi.discordstats.entities.defaults.lists.TokenBasedBotlist$buildRequest(kotlin.String, kotlin.String, kotlin.Long, okhttp3.RequestBody, kotlin.String)/base">base</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="me.schlaubi.discordstats.entities.defaults.lists.TokenBasedBotlist$buildRequest(kotlin.String, kotlin.String, kotlin.Long, okhttp3.RequestBody, kotlin.String)/endpoint">endpoint</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="me.schlaubi.discordstats.entities.defaults.lists.TokenBasedBotlist$buildRequest(kotlin.String, kotlin.String, kotlin.Long, okhttp3.RequestBody, kotlin.String)/botId">botId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">, </span><span class="identifier" id="me.schlaubi.discordstats.entities.defaults.lists.TokenBasedBotlist$buildRequest(kotlin.String, kotlin.String, kotlin.Long, okhttp3.RequestBody, kotlin.String)/body">body</span><span class="symbol">:</span>&nbsp;<a href="https://square.github.io/okhttp/3.x/okhttp/okhttp3/RequestBody.html"><span class="identifier">RequestBody</span></a><span class="symbol">, </span><span class="identifier" id="me.schlaubi.discordstats.entities.defaults.lists.TokenBasedBotlist$buildRequest(kotlin.String, kotlin.String, kotlin.Long, okhttp3.RequestBody, kotlin.String)/authHeader">authHeader</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;AUTHORIZATION_HEADER<span class="symbol">)</span><span class="symbol">: </span><a href="https://square.github.io/okhttp/3.x/okhttp/okhttp3/Request.html"><span class="identifier">Request</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-a-p-i_-u-r-l.html">API_URL</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">API_URL</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-e-n-d-p-o-i-n-t_-u-r-l.html">ENDPOINT_URL</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">ENDPOINT_URL</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
